@@ -1,0 +1,36 @@
+{
+	"type": "modal",
+	"title": {
+		"type": "plain_text",
+		"text": "Create List",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"block_id": "create_list",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "list_name"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "List name",
+				"emoji": true
+			}
+		}
+	]
+}

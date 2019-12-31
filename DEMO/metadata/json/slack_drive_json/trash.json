@@ -1,0 +1,42 @@
+{
+    "type": "modal",
+    "title": {
+        "type": "plain_text",
+        "text": "Trash File",
+        "emoji": true
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Submit",
+        "emoji": true
+    },
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+    "blocks": [
+        {
+            "type": "divider"
+        },
+        {
+            "type": "input",
+            "block_id": "drive_trash_select_file",
+            "element": {
+                "type": "external_select",
+                "action_id": "drive_trash_select_file",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select a File",
+                    "emoji": true
+                },
+                "min_query_length": 0
+            },
+            "label": {
+                "type": "plain_text",
+                "text": "File",
+                "emoji": true
+            }
+        }
+    ]
+}

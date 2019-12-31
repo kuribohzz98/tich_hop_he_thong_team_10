@@ -1,0 +1,86 @@
+{
+    "step_1": {
+        "type": "modal",
+        "title": {
+            "type": "plain_text",
+            "text": "Delete Card",
+            "emoji": true
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Next",
+            "emoji": true
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel",
+            "emoji": true
+        },
+        "blocks": [
+            {
+                "type": "divider"
+            },
+            {
+                "type": "input",
+                "block_id": "delete_card_trello_select_list",
+                "element": {
+                    "type": "external_select",
+                    "action_id": "delete_card_trello_select_list",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a list",
+                        "emoji": true
+                    },
+                    "min_query_length": 0
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Select a list",
+                    "emoji": true
+                }
+            }
+        ]
+    },
+    "step_2": {
+        "type": "modal",
+        "title": {
+            "type": "plain_text",
+            "text": "Delete Card",
+            "emoji": true
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Submit",
+            "emoji": true
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel",
+            "emoji": true
+        },
+        "blocks": [
+            {
+                "type": "divider"
+            },
+            {
+                "type": "input",
+                "block_id": "delete_card_trello_select_card",
+                "element": {
+                    "type": "external_select",
+                    "action_id": "delete_card_trello_select_card",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a card",
+                        "emoji": true
+                    },
+                    "min_query_length": 0
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Select a card",
+                    "emoji": true
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Kuriboh</title>
+</head>
+
+<body>
+    <input type="text" id="message">
+    <button id="button" onclick="sendMessage()">Send</button>
+</body>
+<script>
+    function sendMessage() {
+        const message = document.getElementById("message");
+        if (message) {
+            var setting = {
+                url: "http://duyzz.ddns.net:3000/api/slack/action-endpoint",
+                method: "POST",
+                dataType: "application/x-www-form-urlencoded",
+                data: JSON.stringify({
+                    message: `${$('#message').val()}`
+                })
+            }
+            $.ajax(setting).done(res => {
+                console.log(res);
+            })
+        }
+    }
+</script>
+
+</html>

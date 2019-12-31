@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_MR9UYPnjEemoK4KkLd53kQ" name="talend_mysql" id="_5JxikPniEemoK4KkLd53kQ" label="talend_mysql" dataPackage="_fkT4wCYrEeqZr4h5NXa9hA" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://localhost:3306/talend?noDatetimeStringSync=true&amp;useSSL=false" dbVersionString="MYSQL_8" Port="3306" Username="root" Password="w984hTbNEhQ=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="talend" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;useSSL=false" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_MR-igPnjEemoK4KkLd53kQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_MTas8PnjEemoK4KkLd53kQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_MThaoPnjEemoK4KkLd53kQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_MThaofnjEemoK4KkLd53kQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MThaovnjEemoK4KkLd53kQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_MThao_njEemoK4KkLd53kQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_MThapPnjEemoK4KkLd53kQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_MThapfnjEemoK4KkLd53kQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_MTwrMPnjEemoK4KkLd53kQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_MTwrMfnjEemoK4KkLd53kQ" tag="DB ProductVersion" value="8.0.16"/>
+    <taggedValue xmi:id="_MTwrMvnjEemoK4KkLd53kQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_MR-igfnjEemoK4KkLd53kQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_JbEfcPnmEemoK4KkLd53kQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_fkT4wCYrEeqZr4h5NXa9hA" name="talend" dataManager="_MR9UYPnjEemoK4KkLd53kQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_HXGKACYvEeqZr4h5NXa9hA" name="slack_trello" id="_HWrTQCYvEeqZr4h5NXa9hA" label="slack_trello" tableType="TABLE">
+      <taggedValue xmi:id="_HXGxECYvEeqZr4h5NXa9hA" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HXGxESYvEeqZr4h5NXa9hA" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <taggedValue xmi:id="_HXGxEiYvEeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HXGxEyYvEeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HXGxFCYvEeqZr4h5NXa9hA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HXGxFSYvEeqZr4h5NXa9hA" name="slack_token" label="slack_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HXGxFiYvEeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HXGxFyYvEeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HXGxGCYvEeqZr4h5NXa9hA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_txcZqCebEeqILLUO1oMO-Q" name="slack_user_token" label="slack_user_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_txcZqSebEeqILLUO1oMO-Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_txcZqiebEeqILLUO1oMO-Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_txcZqyebEeqILLUO1oMO-Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HXGxGSYvEeqZr4h5NXa9hA" name="trello_token" label="trello_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HXGxGiYvEeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HXGxGyYvEeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HXGxHCYvEeqZr4h5NXa9hA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HXGxHSYvEeqZr4h5NXa9hA" name="trello_api_key" label="trello_api_key" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HXGxHiYvEeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HXGxHyYvEeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HXGxICYvEeqZr4h5NXa9hA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_AT1CACY3EeqZr4h5NXa9hA" name="trello_id_model" label="trello_id_model" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_AT1CASY3EeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_AT1CAiY3EeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_AT1CAyY3EeqZr4h5NXa9hA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_AT1CBCY3EeqZr4h5NXa9hA" name="trello_url_listener" label="trello_url_listener" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_AT1CBSY3EeqZr4h5NXa9hA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_AT1CBiY3EeqZr4h5NXa9hA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_AT1CByY3EeqZr4h5NXa9hA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ru2F-CaBEeqOkJO0FtL3CA" name="trello_webhook_id" label="trello_webhook_id" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ru2F-SaBEeqOkJO0FtL3CA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ru2F-iaBEeqOkJO0FtL3CA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ru2F-yaBEeqOkJO0FtL3CA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_o5IdACgJEeqY988DrFpWcQ" name="trello_board_id" label="trello_board_id" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_o5IdASgJEeqY988DrFpWcQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_o5IdAigJEeqY988DrFpWcQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_o5IdAygJEeqY988DrFpWcQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_YUIR0ClvEeqvEo8fSQxn1Q" name="slack_google_drive" id="_YUGcoClvEeqvEo8fSQxn1Q" label="slack_google_drive" tableType="TABLE">
+      <taggedValue xmi:id="_YUI44ClvEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_YUI44SlvEeqvEo8fSQxn1Q" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <taggedValue xmi:id="_YUI44ilvEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_YUI44ylvEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_YUI45ClvEeqvEo8fSQxn1Q" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_YUI45SlvEeqvEo8fSQxn1Q" name="drive_client_id" label="drive_client_id" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_YUI45ilvEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_YUI45ylvEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_YUI46ClvEeqvEo8fSQxn1Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_-e35KClwEeqvEo8fSQxn1Q" name="drive_client_secret" label="drive_client_secret" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_-e35KSlwEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_-e35KilwEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_-e35KylwEeqvEo8fSQxn1Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_YUI47SlvEeqvEo8fSQxn1Q" name="drive_refresh_token" label="drive_refresh_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_YUI47ilvEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_YUI47ylvEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_YUI48ClvEeqvEo8fSQxn1Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tLToMCmHEeqvEo8fSQxn1Q" name="slack_token" label="slack_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_tLToMSmHEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tLToMimHEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tLToMymHEeqvEo8fSQxn1Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tLToNCmHEeqvEo8fSQxn1Q" name="slack_user_token" label="slack_user_token" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_tLToNSmHEeqvEo8fSQxn1Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tLToNimHEeqvEo8fSQxn1Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tLToNymHEeqvEo8fSQxn1Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_M9g59ymmEeqrGbkA_L2qEw" name="drive_webhook_id" label="drive_webhook_id" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_M9g5-CmmEeqrGbkA_L2qEw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_M9g5-SmmEeqrGbkA_L2qEw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_M9g5-immEeqrGbkA_L2qEw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_M9g5-ymmEeqrGbkA_L2qEw" name="drive_callbackUrl" label="drive_callbackUrl" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_M9g5_CmmEeqrGbkA_L2qEw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_M9g5_SmmEeqrGbkA_L2qEw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_M9g5_immEeqrGbkA_L2qEw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_M9g5_ymmEeqrGbkA_L2qEw" name="drive_webhook_token" label="drive_webhook_token" length="45" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_M9g6ACmmEeqrGbkA_L2qEw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_M9g6ASmmEeqrGbkA_L2qEw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_M9g6AimmEeqrGbkA_L2qEw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_mjKklCsREeqqsbob2vJRfA" name="drive_page_token" label="drive_page_token" length="45" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_mjKklSsREeqqsbob2vJRfA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_mjKklisREeqqsbob2vJRfA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_mjKklysREeqqsbob2vJRfA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_mjKkmCsREeqqsbob2vJRfA" name="drive_time_out_token" label="drive_time_out_token" length="45" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_mjKkmSsREeqqsbob2vJRfA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_mjKkmisREeqqsbob2vJRfA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_mjKkmysREeqqsbob2vJRfA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

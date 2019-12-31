@@ -1,0 +1,202 @@
+{
+    "step_1": {
+        "type": "modal",
+        "title": {
+            "type": "plain_text",
+            "text": "Create card",
+            "emoji": true
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Next",
+            "emoji": true
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel",
+            "emoji": true
+        },
+        "blocks": [
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "block_id": "create_card_trello_select_list",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "Pick an item from the dropdown list"
+                },
+                "accessory": {
+                    "action_id": "create_card_trello_select_list",
+                    "type": "external_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a list"
+                    },
+                    "min_query_length": 0
+                }
+            }
+        ]
+    },
+    "step_2": {
+        "type": "modal",
+        "title": {
+            "type": "plain_text",
+            "text": "Create card",
+            "emoji": true
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Submit",
+            "emoji": true
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel",
+            "emoji": true
+        },
+        "blocks": [
+            {
+                "type": "divider"
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_name",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "create_card_trello_name"
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Name *",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_desc",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "create_card_trello_desc",
+                    "multiline": true
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Desciption",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_position",
+                "element": {
+                    "type": "static_select",
+                    "action_id": "create_card_trello_position",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a position",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "top"
+                            },
+                            "value": "top"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "bottom"
+                            },
+                            "value": "bottom"
+                        }
+                    ]
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Position",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id":"create_card_trello_due",
+                "element": {
+                    "type": "datepicker",
+                    "initial_date": "2019-12-31",
+                    "action_id":"create_card_trello_due",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a date",
+                        "emoji": true
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Due",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_lists",
+                "element": {
+                    "type": "external_select",
+                    "action_id": "create_card_trello_lists",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a List",
+                        "emoji": true
+                    },
+                    "min_query_length": 0
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "List *",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_members",
+                "element": {
+                    "type": "external_select",
+                    "action_id": "create_card_trello_members",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a member",
+                        "emoji": true
+                    },
+                    "min_query_length": 0
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Member",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "create_card_trello_labels",
+                "element": {
+                    "type": "external_select",
+                    "action_id": "create_card_trello_labels",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a label",
+                        "emoji": true
+                    },
+                    "min_query_length": 0
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Label",
+                    "emoji": true
+                }
+            }
+        ]
+    }
+}
